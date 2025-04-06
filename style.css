@@ -466,8 +466,8 @@ header .navbar {
  }
  
  .pozymiai-section .pozymiai-image-wrapper .pozymiai-image {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     flex: 1 1 35%;
     text-align: center;
  }
@@ -476,6 +476,7 @@ header .navbar {
      width: 100%;
      height: auto;
      padding: 20px;
+     bottom: 100px;
  }
 
  .timeline-section {
