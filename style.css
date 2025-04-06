@@ -464,6 +464,12 @@ header .navbar {
      margin: 10px;
      flex-wrap: wrap;
  }
+
+ .pozymiai-section .pozymiai-text-wrapper img {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+ }
  
  .pozymiai-section .pozymiai-image-wrapper .pozymiai-image {
     width: 100px;
@@ -959,6 +965,12 @@ header .navbar {
         flex-direction: column;
     }
 
+
+    .pozymiai-section .pozymiai-text-wrapper img {
+        max-width: 100%;
+        height: auto;
+    }
+    
     .pozymiai-section .pozymiai-image-wrapper {
         display: flex;
         justify-content: center;
