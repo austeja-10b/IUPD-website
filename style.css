@@ -62,7 +62,7 @@ img {
 
 .section-content {
     margin: 0 auto;
-    padding: 0 20 px;
+    padding: 0 20px;
     max-width: var(--site-max-width);
 }
 
@@ -422,6 +422,7 @@ header .navbar {
      gap: 50px;
      align-items: center;
      justify-content: space-between;
+     font-size: var(--font-size-m);
  }
  
  .pozymiai-section .pozymiai-details .section-title {
@@ -430,6 +431,7 @@ header .navbar {
  
  .pozymiai-section .pozymiai-details {
      flex: 1;
+     max-width: 100%;
  }
  
  .pozymiai-section .pozymiai-details strong {
@@ -446,11 +448,11 @@ header .navbar {
  .pozymiai-section .pozymiai-details .text5,
  .pozymiai-section .pozymiai-details .text6,
  .pozymiai-section .pozymiai-details .text7 {
-     line-height: 30px;
-     text-align: left;
-     font-size: 25px;
-     margin-bottom: 50px;
-     margin-top: 25px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1 1 60%;
  }
  
  .pozymiai-section .pozymiai-details .pozymiai-text-wrapper {
@@ -458,26 +460,22 @@ header .navbar {
      flex-direction: row;
      align-items: flex-start;
      justify-content: space-between;
-     gap: 20px;
+     gap: 250px;
+     margin: 20px;
+     flex-wrap: wrap;
  }
  
- .pozymiai-section .pozymiai-image-wrapper {
-     flex-shrink: 0;
-     margin-left: 30px;
-     width: 300px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     margin-top: 20px;
-     margin-bottom: 90px;
+ .pozymiai-section .pozymiai-image-wrapper .pozymiai-image {
+    width: 400px;
+    height: 400px;
+    flex: 1 1 35%;
+    text-align: center;
  }
  
  .pozymiai-section .pozymiai-image {
      width: 100%;
      height: auto;
-     padding: 20px 20px 20px 20px;
-     margin-top: -50px;
-     margin-bottom: -60px;
+     padding: 20px;
  }
 
  .timeline-section {
@@ -735,7 +733,6 @@ header .navbar {
 }
 
 
-
 @media screen and (max-width: 1024px) {
     .menu-section .menu-list {
         gap: 60px;
@@ -873,11 +870,6 @@ header .navbar {
     .menu-section .menu-list .menu-item {
         width: 100%;
     }
-
-    .footer-section .section-content {
-        flex-direction: column;
-        gap: 20px;
-    }
 }
 
 @media (max-width: 900px) {
@@ -927,5 +919,65 @@ header .navbar {
         left: 45px;
         border-width: 8px 0 8px 16px;
         border-color: transparent transparent transparent #000;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .salis-section .section-content {
+        gap: 50px;
+        text-align: center;
+        padding: 30px 20px 20px;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .salis-section .salis-details :is(.description), .pozymiai-section .pozymiai-details {
+        max-width: 100%;
+    }
+
+    .salis-section .salis-details .buttons {
+        justify-content: center;
+    }
+
+    .salis-section .salis-image-wrapper {
+        max-width: 270px;
+        margin-right: 0;
+    }
+
+    .pozymiai-section .section-content {
+        gap: 50px;
+        flex-direction: column;
+        padding: 30px 20px 20px;
+        justify-content: center;
+    }
+
+    .pozymiai-section .pozymiai-details .pozymiai-text-wrapper {
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .pozymiai-section .pozymiai-image-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pozymiai-section .pozymiai-image-wrapper .pozymiai-image {
+        width: 100%;
+        height: 100%;
+        object-position: center;
+    }
+
+    .pozymiai-section .pozymiai-text-wrapper .text1, .text2, .text3, .text4 .text5 .text7, .pozymiai-image {
+        flex: 1 1 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .pozymiai-section .pozymiai-text-wrapper {
+        flex-direction: column;
+    }
+
+    .pozymiai-section .pozymiai-text-wrapper .text1, .text2, .text3, .text4 .text5 .text7, .pozymiai-image {
+        flex: 1 1 100%;
     }
 }
