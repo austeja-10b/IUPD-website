@@ -414,7 +414,7 @@ header .navbar {
 .pozymiai-section {
     background-color: #002438;
     color: white;
-    padding: 120px 0;
+    padding: 60px 0;
  }
  
  .pozymiai-section .section-content {
@@ -460,8 +460,8 @@ header .navbar {
      flex-direction: row;
      align-items: flex-start;
      justify-content: space-between;
-     gap: 100px;
-     margin: 10px 0;
+     gap: 50px;
+     margin: 10px;
      flex-wrap: wrap;
  }
  
