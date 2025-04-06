@@ -449,7 +449,7 @@ header .navbar {
  .pozymiai-section .pozymiai-details .text6,
  .pozymiai-section .pozymiai-details .text7 {
     display: flex;
-    gap: 50px;
+    gap: 20px;
     align-items: center;
     justify-content: space-between;
     flex: 1 1 60%;
@@ -460,8 +460,8 @@ header .navbar {
      flex-direction: row;
      align-items: flex-start;
      justify-content: space-between;
-     gap: 250px;
-     margin: 20px;
+     gap: 100px;
+     margin: 10px 0;
      flex-wrap: wrap;
  }
  
@@ -470,10 +470,12 @@ header .navbar {
     height: 300px;
     flex: 1 1 35%;
     text-align: center;
+    margin: 0;
+    padding: 0;
  }
  
  .pozymiai-section .pozymiai-image {
-    width: 100%;
+    width: 100px;
     height: auto;
     padding: 0;
     margin-top: 10px;
