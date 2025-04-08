@@ -748,21 +748,21 @@ header .navbar {
 .table-wrapper {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-  }
+}
   
-  .Ne-table {
+.Ne-table {
     width: 100%;
     min-width: 600px;
     border-collapse: collapse;
-  }
+}
 
-  .table-wrapper::-webkit-scrollbar {
+.table-wrapper::-webkit-scrollbar {
     height: 6px;
-  }
-  .table-wrapper::-webkit-scrollbar-thumb {
+}
+.table-wrapper::-webkit-scrollbar-thumb {
     background-color: var(--color-accent);
     border-radius: 3px;
-  }
+}
 
 @media screen and (max-width: 1024px) {
     .menu-section .menu-list {
