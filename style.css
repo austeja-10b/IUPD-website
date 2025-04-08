@@ -745,6 +745,24 @@ header .navbar {
     border-radius: 10px;
 }
 
+.table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .Ne-table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+  }
+
+  .table-wrapper::-webkit-scrollbar {
+    height: 6px;
+  }
+  .table-wrapper::-webkit-scrollbar-thumb {
+    background-color: var(--color-accent);
+    border-radius: 3px;
+  }
 
 @media screen and (max-width: 1024px) {
     .menu-section .menu-list {
@@ -1032,47 +1050,3 @@ header .navbar {
     }
 }
 
-@media (max-width: 768px) {
-    .Ne-table, .Ne-table thead, .Ne-table tbody, .Ne-table th, .Ne-table td, .Ne-table tr {
-      display: block;
-    }
-  
-    .Ne-table thead {
-      display: none;
-    }
-  
-    .Ne-table tr {
-      margin-bottom: 1.5rem;
-      border: 1px solid var(--color-accent);
-      border-radius: 0.5rem;
-      padding: 1rem;
-      background: white;
-    }
-  
-    .Ne-table td {
-      position: relative;
-      padding-left: 50%;
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-      border: none;
-    }
-  
-    .Ne-table td::before {
-      content: attr(data-label);
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 45%;
-      padding-left: 1rem;
-      font-weight: bold;
-      white-space: nowrap;
-      color: var(--color-text-dark);
-    }
-  
-    .Ne-table img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin-top: 0.5rem;
-    }
-  }
