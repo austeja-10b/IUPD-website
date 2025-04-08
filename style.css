@@ -1118,3 +1118,8 @@ header .navbar {
     }
 }
 
+@media screen and (max-width: 900px) {
+    .timeline ul::before {
+        display: none;
+    }
+}
