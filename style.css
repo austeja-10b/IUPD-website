@@ -132,6 +132,7 @@ header .navbar {
 .hero-section {
     min-height: 100vh;
     background: var(--primary-color);
+    overflow-x: hidden;
 }
 
 .hero-section .section-content {
@@ -208,6 +209,7 @@ header .navbar {
 .about-section {
     padding: 120px 0;
     background: var(--light-yellow-color);
+    overflow-x: hidden;
 }
 
 .about-section .section-title::after {
@@ -253,6 +255,7 @@ header .navbar {
     color: var(--white-color);
     background: var(--dark-color);
     padding: 50px 0 100px;
+    overflow-x: hidden;
 }
 
 .menu-section .menu-list {
@@ -292,6 +295,7 @@ header .navbar {
     padding: 20px;
     background-color: var(--light-yellow-color);
     padding-bottom: 30px;
+    overflow-x: hidden;
 }
 
 .slang-section .section-title::after {
@@ -387,6 +391,7 @@ header .navbar {
 .salis-section {
     min-height: 100vh;
     background: var(--primary-color);
+    overflow-x: hidden;
 }
 
 .salis-section .section-content {
@@ -419,6 +424,7 @@ header .navbar {
     background-color: #002438;
     color: white;
     padding: 60px 0;
+    overflow-x: hidden;
  }
  
  .pozymiai-section .section-content {
@@ -498,6 +504,7 @@ header .navbar {
     background-color: var(--secondary-color);
     overflow-x: hidden;
     padding-bottom: 5px;
+    overflow-x: hidden;
  }
 
  .timeline-section .section-title::after {
@@ -642,6 +649,7 @@ header .navbar {
 .maistas-section {
     padding: 50px 0 100px;
     background: var(--medium-gray-color);
+    overflow-x: hidden;
 }
 
 .maistas-section .section-title {
@@ -700,6 +708,7 @@ header .navbar {
     padding: 50px 0 100px;
     background: var(--white-color);
     text-align: center;
+    overflow-x: hidden;
 }
 
 .ne-section .description {
