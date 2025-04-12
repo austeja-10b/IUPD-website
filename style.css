@@ -129,6 +129,44 @@ header .navbar {
     display: none;
 }
 
+.viktorina-section {
+    min-height: 50vh;
+    background: var(--secondary-color);
+    overflow-x: hidden;
+}
+.viktorina-section .section-title::after {
+    content: "";
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: var(--border-radius-s);
+    background: var(--medium-gray-color);
+}
+
+.viktorina-section .mygtukas-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.viktorina-section .mygtukas {
+    padding: 16px 32px;
+    font-size: 1.25rem;
+    background-color: var(--medium-gray-color);
+    color: var(--white-color);
+    border-radius: var(--border-radius-m);
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.viktorina-section .mygtukas:hover {
+    background: var(--white-color);
+    color: var(--medium-gray-color);
+}
+
 .hero-section {
     min-height: 100vh;
     background: var(--primary-color);
