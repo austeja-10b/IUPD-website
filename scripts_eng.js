@@ -140,17 +140,28 @@ document.querySelector(".app").appendChild(backToHomeBtn);
 
 let currentQuestionIndex = 0;
 let score = 0;
+let shuffledQuestions = [];
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
 
 function startQuiz(){
     currentQuestionIndex = 0;
     score = 0;
+    shuffledQuestions = [...questions];
+    shuffleArray(shuffledQuestions); // shuffle questions
     nextButton.innerHTML = "Next";
+    backToHomeBtn.style.display = "none";
     showQuestion();
 }
 
 function showQuestion(){
     resetState();
-    let currentQuestion = questions[currentQuestionIndex];
+    let currentQuestion = shuffledQuestions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
 
@@ -201,7 +212,7 @@ function showScore() {
 
 function handleNextButton(){
     currentQuestionIndex++;
-    if(currentQuestionIndex < questions.length){
+    if(currentQuestionIndex < shuffledQuestions.length){
         showQuestion();
     }else{
         showScore();
@@ -209,11 +220,11 @@ function handleNextButton(){
 }
 
 nextButton.addEventListener("click", ()=>{
-    if(currentQuestionIndex < questions.length){
+    if(currentQuestionIndex < shuffledQuestions.length){
         handleNextButton();
     }else{
         startQuiz();
     }
-})
+});
 
 startQuiz();
