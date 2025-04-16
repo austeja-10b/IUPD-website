@@ -9,7 +9,7 @@ const questions = [
         ]
     },
     {
-        question: "Kuri šalis žinoma dėl savo griežtų maisto kultūros normų, kuriose būtina laikytis tam tikrų taisyklių, pvz., maistą valgyti tik su dešinėmis rankomis?",
+        question: "Kuri šalis žinoma dėl savo griežtų maisto kultūros normų, kuriose būtina laikytis tam tikrų taisyklių, pvz., maistą valgyti tik su dešine ranka?",
         answers: [
             {text: "Indija", correct: true},
             {text: "Kanada", correct: false},
