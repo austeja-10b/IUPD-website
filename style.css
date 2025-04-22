@@ -869,7 +869,7 @@ header .navbar {
     font-style: italic;
     font-size: 14px;
     color: var(--secondary-color);
-    border-left: 3px solid #0077b6;
+    border-left: 3px solid var(--secondary-color);
     padding-left: 10px;
     margin-bottom: 15px;
 }
