@@ -811,6 +811,58 @@ header .navbar {
     border-radius: 3px;
 }
 
+.famous-section {
+    background-color: var(--secondary-color);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.person-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.person {
+    background-color: var(--dark-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: left;
+}
+
+.person img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    max-height: 250px;
+    margin-bottom: 15px;
+}
+
+.person h3 {
+    margin: 0;
+    font-size: 20px;
+    color:#fff;
+    margin-bottom: 15px;
+}
+
+.person .info {
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.person blockquote {
+    font-style: italic;
+    font-size: 14px;
+    color: var(--secondary-color);
+    border-left: 3px solid #0077b6;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
 @media screen and (max-width: 1024px) {
     .menu-section .menu-list {
         gap: 60px;
@@ -1168,5 +1220,20 @@ header .navbar {
 @media screen and (max-width: 900px) {
     .timeline ul::before {
         display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .person-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .person {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .person img {
+        max-height: 300px;
     }
 }
