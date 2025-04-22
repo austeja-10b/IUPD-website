@@ -817,6 +817,17 @@ header .navbar {
     text-align: center;
 }
 
+.famous-section .section-title::after {
+    content: "";
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: var(--border-radius-s);
+    background: var(--dark-color);
+
+}
+
 .person-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
