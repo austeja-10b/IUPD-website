@@ -104,3 +104,10 @@ body {
 .back-home-btn {
     display: none;
 }
+
+.explanation {
+    margin-top: 20px;
+    font-style: italic;
+    color: var(--primary-color);
+}
+
