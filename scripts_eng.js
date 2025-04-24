@@ -166,7 +166,7 @@ const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 const backToHomeBtn = document.createElement("a");
 
-backToHomeBtn.href = "index.html";
+backToHomeBtn.href = "index_eng.html";
 backToHomeBtn.textContent = "Back to Home";
 backToHomeBtn.classList.add("back-home-btn");
 backToHomeBtn.style.display = "none";
@@ -177,7 +177,7 @@ let currentQuestionIndex = 0;
 let score = 0;
 
 function startQuiz(){
-    currentQuestionIndex = 0;
+    currentQuestion = 0;
     score = 0;
     shuffleQuestions();
     nextButton.innerHTML = "Next";
