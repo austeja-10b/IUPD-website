@@ -169,9 +169,8 @@ const backToHomeBtn = document.createElement("a");
 backToHomeBtn.href = "index_eng.html";
 backToHomeBtn.textContent = "Back to Home";
 backToHomeBtn.classList.add("back-home-btn");
-backToHomeBtn.style.display = "none";
 
-document.querySelector(".app").appendChild(backToHomeBtn);
+document.body.appendChild(backToHomeBtn);
 
 let currentQuestionIndex = 0;
 let score = 0;
